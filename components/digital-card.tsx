@@ -61,7 +61,7 @@ export function DigitalCard() {
   }, [])
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('oi. recebi seu cartão. melhor salvar seu contato agora e ficar com meu cartão virtual https://patrickfarani.abacusai.app/')
+    const message = encodeURIComponent('Olá, recebi seu cartão virtual. Já vou salvar os seus dados na minha lista de contatos!!!\nhttps://patrickfarani.abacusai.app/')
     const phoneNumber = contactInfo?.phone?.replace(/\D/g, '') ?? ''
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
     window?.open?.(whatsappUrl, '_blank')
